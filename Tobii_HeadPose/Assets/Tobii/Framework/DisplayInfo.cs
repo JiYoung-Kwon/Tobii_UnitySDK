@@ -14,16 +14,16 @@ namespace Tobii.Gaming
 		/// </summary>
 		/// <param name="displayWidthMm"></param>
 		/// <param name="displayHeightMm"></param>
-		internal DisplayInfo(float displayWidthMm, float displayHeightMm) : this()
-		{
-			DisplayWidthMm = displayWidthMm;
-			DisplayHeightMm = displayHeightMm;
-		}
+		internal DisplayInfo(float displayWidthMm, float displayHeightMm) : this()   //internal : 어셈블리 내부에서만 접근이 가능
+        {
+			DisplayWidthMm = displayWidthMm; //눈 추적 디스플레이 모니터의 너비 (밀리미터)
+            DisplayHeightMm = displayHeightMm; //눈 추적 디스플레이 모니터의 높이 (밀리미터)
+        }
 
-		/// <summary>
-		/// Creates a DisplayInfo instance representing an invalid state.
-		/// </summary>
-		public static DisplayInfo Invalid
+        /// <summary>
+        /// Creates a DisplayInfo instance representing an invalid state. 잘못된 상태를 나타내는 DisplayInfo 인스턴스 생성
+        /// </summary>
+        public static DisplayInfo Invalid 
 		{
 			get { return new DisplayInfo(float.NaN, float.NaN); }
 		}
@@ -31,7 +31,7 @@ namespace Tobii.Gaming
 		/// <summary>
 		/// Gets the validity of this DisplayInfo instance.
 		/// </summary>
-		public bool IsValid
+		public bool IsValid //유효여부
 		{
 			get { return !float.IsNaN(DisplayWidthMm) && !float.IsNaN(DisplayHeightMm); }
 		}

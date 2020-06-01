@@ -4,10 +4,10 @@
 
 namespace Tobii.Gaming
 {
-	/// <summary>
-	/// Represents different user presence states.
-	/// </summary>
-	public enum UserPresence
+    /// <summary>
+    /// Represents different user presence states. 다른 사용자 존재 상태를 나타냄
+    /// </summary>
+    public enum UserPresence
 	{
 		/// <summary>
 		/// User presence is unknown.
