@@ -23,7 +23,7 @@ public class HeadMovement : MonoBehaviour
 
 	public Transform Head;
 	public float Responsiveness = 10f;
-    public Text headpose_t;
+    public Text headposeR_t;
 
     void Update()
 	{
@@ -55,6 +55,6 @@ public class HeadMovement : MonoBehaviour
 
         Debug.Log(LeftEyeClosed + " , " + RightEyeClosed); //값 확인
 
-        headpose_t.text = "HeadPose : " + Head.transform.localRotation.eulerAngles; // 머리 회전값(오일러 각도) 출력
+        headposeR_t.text = "HeadPoseR : " + Head.transform.localRotation.eulerAngles; // 머리 회전값(오일러 각도) 출력
     }
 }

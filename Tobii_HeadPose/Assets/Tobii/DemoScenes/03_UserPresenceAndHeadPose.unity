@@ -577,6 +577,14 @@ PrefabInstance:
       propertyPath: headpose_t
       value: 
       objectReference: {fileID: 400669977}
+    - target: {fileID: 11456272, guid: 21deb2d6b7416744395ed21dfcae6b89, type: 3}
+      propertyPath: headposeR_t
+      value: 
+      objectReference: {fileID: 400669977}
+    - target: {fileID: 11456272, guid: 21deb2d6b7416744395ed21dfcae6b89, type: 3}
+      propertyPath: headposeP_t
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 21deb2d6b7416744395ed21dfcae6b89, type: 3}
 --- !u!1001 &173572036
@@ -1317,7 +1325,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'HeadPose : '
+  m_Text: 'HeadPoseR : '
 --- !u!222 &400669978
 CanvasRenderer:
   m_ObjectHideFlags: 0
